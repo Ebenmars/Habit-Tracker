@@ -1,6 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@400;600;700&display=swap');
+
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: "Inter",sans-serif;
 }
 
+body{
+    background-color:#6c757d;
+   
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    
+    
+}
+
+aside{
+    width:225px;
+    height:100vh;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    background-color:#F5F5F5 ;
+    border-top-right-radius:40px ;
+   
+}
+
+
+.button-container{
+    position:absolute;
+    right:10px;
+    bottom:10px;
+}
+
+.sidebar-header{
+    display :flex;
+   gap:10px;
+   padding-bottom:10px;
+}
+
+.sidebar-header img{
+    width:50%;
+    height:100%;
+    border-radius: 50px;
+ }
+
+ .user-name{
+    align-self: center;
+ }
+
+ .sidebar-items span {
+    margin-left:20px;
+ }
+
+ .sidebar-items{
+    margin-top: 30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right:50px;
+ }
+
+ .sidebar-items li{
+    list-style: none;
+    margin-top: 25px;
+ }
+
+
+ .sidebar-items a{
+    display:flex;
+    list-style: none;
+    align-items: center;
+ }
+
+ .habit-feed{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    max-width:500px;
+    height: 500px;
+   
+ }

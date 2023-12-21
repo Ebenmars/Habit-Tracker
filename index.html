@@ -4,19 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Habiti</title>
+    <script src="https://kit.fontawesome.com/d5a58a8dfa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- container  -->
+    <!-- container for the whole website  -->
     <div class="container">
+        <!-- the list of habits should be collable but the page should move  -->
       <header>
-        <navbar></navbar>
-        <a src="./stats.html"></a>
+        <!-- <h1>Month</h1> -->
       </header>
+        <!-- aside: will have home button, stats button, will have tags, and maybe journal entry button -->
+        <aside>
+            
+                <div class="sidebar-header">
+                    <img src="./Profile-pricture.jpg" alt="d" />
+                    <div class="user-name">
+                        <p class="name">John Doe</p>
+                    </div>
+                </div>
+                <div class="sidebar-items">
+                  <ul>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-house" style="color: #000000;"></i>
+                        <span>Home</span></a>
+                      
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa-solid fa-chart-simple" style="color: #000000;"></i></i>
+                        <span>Stats</span></a>
+                      
+                    </li>
+                    
+                  </ul>
+                </div>
+
+                
+                <!-- <button>Home</button> -->
+            
+            
+             <!-- stats page -->
+        <a src="./stats.html"></a>
+        </aside>
+       
       <section>
+        <!-- will see a week view -->
         <div class="week"></div>
-        <div class="habit"></div>
+        <!-- the habit feed , where all the habits will be displayed-->
+        <div class="habit-feed">
+            <div class="habit">
+              <p>Home</p>
+            </div>
+        </div>
+        <!-- button to add habits -->
+        <!-- A form should pop up -->
+        <div class="button-container">
         <button class="add-habit">+ Add Habit</button>
+    </div>
       </section>
     </div>
     <script src="index.js"></script>
